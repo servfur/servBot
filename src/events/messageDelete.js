@@ -80,7 +80,7 @@ export default {
           ? message.content.substring(0, MAX_LOGGED_MESSAGE_CONTENT_LENGTH - 3) + '...' 
           : message.content;
         fields.push({
-          name: 'contenr',
+          name: 'content',
           value: content || '*(empty message)*',
           inline: false
         });
@@ -90,7 +90,7 @@ export default {
       fields.push({
         name: 'msg ID',
         value: message.id,
-        inline: true
+        inline: false
       });
 
       
