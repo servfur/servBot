@@ -20,7 +20,7 @@ export default {
       
       if (newMessage.author) {
         fields.push({
-          name: '👤 Author',
+          name: 'author',
           value: `${newMessage.author.tag} (${newMessage.author.id})`,
           inline: true
         });
@@ -28,7 +28,7 @@ export default {
 
       
       fields.push({
-        name: '💬 Channel',
+        name: 'channel',
         value: `${newMessage.channel.toString()} (${newMessage.channel.id})`,
         inline: true
       });
@@ -39,7 +39,7 @@ export default {
         ? oldContent.substring(0, MAX_LOGGED_EDIT_CONTENT_LENGTH - 3) + '...' 
         : oldContent;
       fields.push({
-        name: '📝 Old Content',
+        name: 'before,
         value: oldContentTruncated,
         inline: false
       });
@@ -50,14 +50,14 @@ export default {
         ? newContent.substring(0, MAX_LOGGED_EDIT_CONTENT_LENGTH - 3) + '...' 
         : newContent;
       fields.push({
-        name: '📝 New Content',
+        name: 'after',
         value: newContentTruncated,
         inline: false
       });
 
       
       fields.push({
-        name: '🆔 Message ID',
+        name: 'msg ID',
         value: newMessage.id,
         inline: true
       });
