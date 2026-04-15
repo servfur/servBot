@@ -80,7 +80,7 @@ export default {
           ? message.content.substring(0, MAX_LOGGED_MESSAGE_CONTENT_LENGTH - 3) + '...' 
           : message.content;
         fields.push({
-          name: ' ',
+          name: 'contenr',
           value: content || '*(empty message)*',
           inline: false
         });
@@ -88,7 +88,7 @@ export default {
 
       
       fields.push({
-        name: 'Message ID',
+        name: 'msg ID',
         value: message.id,
         inline: true
       });
@@ -97,7 +97,7 @@ export default {
       fields.push({
         name: ' ',
         value: `<t:${Math.floor(message.createdTimestamp / 1000)}:R>`,
-        inline: true
+        inline: false
       });
 
       
