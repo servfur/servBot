@@ -61,7 +61,7 @@ export default {
       
       if (message.author) {
         fields.push({
-          name: '👤 Author',
+          name: 'author',
           value: `${message.author.tag} (${message.author.id})`,
           inline: true
         });
@@ -69,7 +69,7 @@ export default {
 
       
       fields.push({
-        name: '💬 Channel',
+        name: 'channel',
         value: `${message.channel.toString()} (${message.channel.id})`,
         inline: true
       });
@@ -80,7 +80,7 @@ export default {
           ? message.content.substring(0, MAX_LOGGED_MESSAGE_CONTENT_LENGTH - 3) + '...' 
           : message.content;
         fields.push({
-          name: '📝 Content',
+          name: ' ',
           value: content || '*(empty message)*',
           inline: false
         });
@@ -88,14 +88,14 @@ export default {
 
       
       fields.push({
-        name: '🆔 Message ID',
+        name: 'Message ID',
         value: message.id,
         inline: true
       });
 
       
       fields.push({
-        name: '📅 Created',
+        name: ' ',
         value: `<t:${Math.floor(message.createdTimestamp / 1000)}:R>`,
         inline: true
       });
@@ -103,7 +103,7 @@ export default {
       
       if (message.attachments.size > 0) {
         fields.push({
-          name: '📎 Attachments',
+          name: 'Files',
           value: message.attachments.size.toString(),
           inline: true
         });
