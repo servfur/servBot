@@ -206,7 +206,7 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1466128182938964144,
 
     // Role IDs allowed to manage/support tickets.
     supportRoles: [1466158362625310740, 1466128180145422656, 1466170259458494597],
