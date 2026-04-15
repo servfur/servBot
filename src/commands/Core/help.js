@@ -190,7 +190,7 @@ async function createInitialHelpMenu() {
 
     return {
         embeds: [embed],
-        components: [buttonRow, selectRow],
+        components: [selectRow],
     };
 }
 
