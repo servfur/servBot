@@ -5,7 +5,7 @@ export const botConfig = {
   // =========================
   // BOT PREFIX
   // =========================
-  prefix: ",",
+  prefix: "s-",
 
   // =========================
   // BOT PRESENCE (what users see under the bot name)
@@ -143,10 +143,10 @@ export const botConfig = {
       // Default footer text used in bot embeds.
       text: "servyy's",
       // Footer icon URL (null = no icon).
-      icon: null,
+      icon: cdn.discordapp.com/attachments/1334930104278843513/1486481284237758505/image0.jpg?ex=69e2aa13&is=69e15893&hm=90db847f9ce7cb9262e49781f122801cf9129a08984c2eb8b0a4546f52495e55&,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
-    thumbnail: null,
+    thumbnail: cdn.discordapp.com/attachments/1334930104278843513/1486481284237758505/image0.jpg?ex=69e2aa13&is=69e15893&hm=90db847f9ce7cb9262e49781f122801cf9129a08984c2eb8b0a4546f52495e55&,
     author: {
       // Optional default embed author block.
       name: null,
